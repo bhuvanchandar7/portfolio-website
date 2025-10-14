@@ -84,10 +84,10 @@ const Hero = () => {
             <Linkedin className="w-6 h-6" />
           </a>
           <a
-            href="https://www.instagram.com/bhuvanchandar7"
+            href="https://instagram.com/bhuvanchandar7"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-secondary transition-colors"
+            className="text-muted-foreground hover:text-pink-500 transition-colors"
             aria-label="Instagram Profile"
           >
             <Instagram className="w-6 h-6" />

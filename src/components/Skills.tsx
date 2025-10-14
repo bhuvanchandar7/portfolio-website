@@ -53,7 +53,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-4 bg-card/30">
+    <section id="skills" className="py-20 px-4 bg-card/50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -66,11 +66,11 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <Card
               key={index}
-              className="glass-card p-6 hover:glow-effect transition-all duration-300 animate-slide-up"
+              className="glass-card p-6 hover:glow-effect transition-all duration-300 animate-slide-up border-primary/20"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className={`w-1 h-8 rounded-full bg-gradient-to-b ${category.gradient}`} />
+                <div className={`w-1 h-8 rounded-full bg-gradient-to-b ${category.gradient} shadow-lg`} />
                 <h3 className="text-xl font-semibold">{category.title}</h3>
               </div>
               <div className="flex flex-wrap gap-2">
@@ -78,7 +78,7 @@ const Skills = () => {
                   <Badge
                     key={skillIndex}
                     variant="secondary"
-                    className="bg-muted/50 hover:bg-muted transition-colors"
+                    className="bg-primary/20 hover:bg-primary/30 border border-primary/40 transition-all hover:scale-105"
                   >
                     {skill}
                   </Badge>
@@ -89,15 +89,15 @@ const Skills = () => {
         </div>
 
         <div className="mt-12 grid md:grid-cols-3 gap-6">
-          <Card className="glass-card p-6 text-center">
+          <Card className="glass-card p-6 text-center border-primary/20 hover:border-primary/40 transition-all">
             <h4 className="text-3xl font-bold gradient-text mb-2">3+</h4>
             <p className="text-muted-foreground">Certifications</p>
           </Card>
-          <Card className="glass-card p-6 text-center">
+          <Card className="glass-card p-6 text-center border-primary/20 hover:border-primary/40 transition-all">
             <h4 className="text-3xl font-bold gradient-text mb-2">4+</h4>
             <p className="text-muted-foreground">Major Projects</p>
           </Card>
-          <Card className="glass-card p-6 text-center">
+          <Card className="glass-card p-6 text-center border-primary/20 hover:border-primary/40 transition-all">
             <h4 className="text-3xl font-bold gradient-text mb-2">Research</h4>
             <p className="text-muted-foreground">NSERC Award Winner</p>
           </Card>
