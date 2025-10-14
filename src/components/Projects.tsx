@@ -13,6 +13,7 @@ const Projects = () => {
       tech: ["Python", "PyTorch", "FastAPI", "Spring Boot", "Docker", "AWS"],
       period: "2025 – Present",
       color: "from-primary to-purple-600",
+      github: "https://github.com/Roshan1299/Flight-Delay-Predictor",
     },
     {
       title: "Thermal Energy Prediction",
@@ -31,6 +32,17 @@ const Projects = () => {
       tech: ["Android SDK", "Firebase", "Java"],
       period: "Jan – Apr 2025",
       color: "from-purple-600 to-pink-600",
+      github: "https://github.com/cmput301-w25/project-impostersyndrome",
+    },
+    {
+      title: "Ray Tracer",
+      subtitle: "3D Graphics Rendering Engine",
+      description:
+        "Implemented a high-performance ray tracer in C with support for realistic lighting, shadows, reflections, and refractions. Optimized rendering algorithms for complex scenes with multiple objects and light sources.",
+      tech: ["C", "Computer Graphics", "Algorithms"],
+      period: "2024",
+      color: "from-amber-500 to-orange-600",
+      github: "https://github.com/bhuvanchandar7/Ray-Tracer",
     },
     {
       title: "Credit Card Fraud Detection",
@@ -40,6 +52,7 @@ const Projects = () => {
       tech: ["Python", "scikit-learn", "NumPy"],
       period: "Nov 2024 – Jan 2025",
       color: "from-cyan-500 to-secondary",
+      github: "https://github.com/bhuvanchandar7/Credit-card-fraud-detection",
     },
     {
       title: "Lane Line Detection",
@@ -49,6 +62,7 @@ const Projects = () => {
       tech: ["Python", "OpenCV", "Computer Vision"],
       period: "Sep – Dec 2024",
       color: "from-pink-600 to-red-600",
+      github: "https://github.com/bhuvanchandar7/lane-line-detection",
     },
   ];
 
@@ -97,22 +111,19 @@ const Projects = () => {
               </div>
 
               <div className="flex gap-3 pt-2">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="border-primary/30 hover:border-primary hover:bg-primary/10"
-                >
-                  <Github className="w-4 h-4 mr-2" />
-                  Code
-                </Button>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="border-secondary/30 hover:border-secondary hover:bg-secondary/10"
-                >
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Details
-                </Button>
+                {project.github && (
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="border-primary/30 hover:border-primary hover:bg-primary/10"
+                    asChild
+                  >
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Github className="w-4 h-4 mr-2" />
+                      Code
+                    </a>
+                  </Button>
+                )}
               </div>
             </Card>
           ))}
