@@ -78,7 +78,7 @@ const Skills = () => {
                   <Badge
                     key={skillIndex}
                     variant="secondary"
-                    className="bg-primary/20 hover:bg-primary/30 border border-primary/40 transition-all hover:scale-105"
+                    className="bg-primary/20 hover:bg-primary/30 border border-primary/40 text-white transition-all hover:scale-105"
                   >
                     {skill}
                   </Badge>

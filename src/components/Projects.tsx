@@ -15,15 +15,7 @@ const Projects = () => {
       color: "from-primary to-purple-600",
       github: "https://github.com/Roshan1299/Flight-Delay-Predictor",
     },
-    {
-      title: "Thermal Energy Prediction",
-      subtitle: "Research - LSTM Architecture",
-      description:
-        "Engineered multi-head attention LSTM achieving R² = 0.98 and MAE < 0.5°C for predicting 10-point thermal storage temperature profiles. Automated validation pipelines across 150+ runs.",
-      tech: ["Python", "TensorFlow", "LSTM", "Data Analytics"],
-      period: "Jan 2025 – Present",
-      color: "from-secondary to-blue-600",
-    },
+
     {
       title: "Android Mood Tracker",
       subtitle: "Mobile Application",

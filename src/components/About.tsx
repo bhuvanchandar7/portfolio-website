@@ -21,7 +21,7 @@ const About = () => {
     {
       icon: TrendingUp,
       title: "Research",
-      description: "Published work in thermal energy optimization",
+      description: "(soon)",
     },
   ];
 
@@ -59,11 +59,6 @@ const About = () => {
               <div className="text-center">
                 <div className="text-3xl font-bold gradient-text">2027</div>
                 <div className="text-sm text-muted-foreground">Expected Grad</div>
-              </div>
-              <div className="w-px bg-border" />
-              <div className="text-center">
-                <div className="text-3xl font-bold gradient-text">85%+</div>
-                <div className="text-sm text-muted-foreground">Model Accuracy</div>
               </div>
             </div>
           </div>
