@@ -48,18 +48,18 @@ const About = () => {
             <p className="text-lg text-muted-foreground leading-relaxed">
               Currently working as a <span className="text-secondary font-semibold">Research and Teaching Assistant</span> at the University of Alberta, applying AI and data analytics to renewable energy systems and statistical learning.
             </p>
-            <div className="flex gap-6 md:gap-12 pt-4 items-center justify-between max-w-xl mx-auto">
-              <div className="text-center">
+            <div className="flex gap-6 pt-4 items-center justify-evenly w-full max-w-2xl mx-auto">
+              <div className="text-center flex-1">
                 <div className="text-2xl md:text-3xl font-bold gradient-text">3.8</div>
                 <div className="text-xs md:text-sm text-muted-foreground whitespace-nowrap">GPA</div>
               </div>
-              <div className="w-px h-12 bg-border" />
-              <div className="text-center">
+              <div className="w-px h-12 bg-border flex-shrink-0" />
+              <div className="text-center flex-1">
                 <div className="text-2xl md:text-3xl font-bold gradient-text">2027</div>
                 <div className="text-xs md:text-sm text-muted-foreground whitespace-nowrap">Expected Grad</div>
               </div>
-              <div className="w-px h-12 bg-border" />
-              <div className="text-center">
+              <div className="w-px h-12 bg-border flex-shrink-0" />
+              <div className="text-center flex-1">
                 <div className="text-2xl md:text-3xl font-bold gradient-text">NSERC</div>
                 <div className="text-xs md:text-sm text-muted-foreground whitespace-nowrap">Awardee</div>
               </div>
