@@ -46,7 +46,7 @@ const About = () => {
               practical experience in machine learning, data analytics, and full-stack development.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Currently working as an <span className="text-secondary font-semibold">Undergraduate Research Assistant</span> at the University of Alberta’s Renewable Thermal Energy Lab, where I use deep learning and predictive modeling to improve renewable energy systems. I also work as a <span className="text-secondary font-semibold">Undergraduate Teaching Assistant</span> for Applied Statistics, helping students connect data analysis with real-world applications. I’m passionate about building intelligent, data-driven solutions that make technology smarter and more sustainable.
+              Currently working as a <span className="text-secondary font-semibold">Research and Teaching Assistant</span> at the University of Alberta, applying AI and data analytics to renewable energy systems and statistical learning.
             </p>
             <div className="flex gap-4 pt-4">
               <div className="text-center">
