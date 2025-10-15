@@ -48,7 +48,7 @@ const About = () => {
             <p className="text-lg text-muted-foreground leading-relaxed">
               Currently working as a <span className="text-secondary font-semibold">Research and Teaching Assistant</span> at the University of Alberta, applying AI and data analytics to renewable energy systems and statistical learning.
             </p>
-            <div className="flex gap-3 pt-4 items-center justify-center">
+            <div className="flex gap-6 md:gap-12 pt-4 items-center justify-between max-w-xl mx-auto">
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-bold gradient-text">3.8</div>
                 <div className="text-xs md:text-sm text-muted-foreground whitespace-nowrap">GPA</div>
