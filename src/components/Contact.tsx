@@ -86,12 +86,14 @@ const Contact = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button
+              asChild
               size="lg"
               className="gradient-bg text-white font-semibold hover:opacity-90 transition-opacity"
-              onClick={() => window.location.href = "mailto:bhuvanac@ualberta.ca"}
             >
-              <Mail className="w-5 h-5 mr-2" />
-              Send Email
+              <a href="mailto:bhuvanac@ualberta.ca">
+                <Mail className="w-5 h-5 mr-2" />
+                Send Email
+              </a>
             </Button>
             <Button
               variant="outline"
