@@ -48,22 +48,15 @@ const About = () => {
             <p className="text-lg text-muted-foreground leading-relaxed">
               Currently working as a <span className="text-secondary font-semibold">Research and Teaching Assistant</span> at the University of Alberta, applying AI and data analytics to renewable energy systems and statistical learning.
             </p>
-            
-            {/* Academic and Achievement Highlights */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6">
-              <div className="text-center p-4 glass-card">
-                <div className="text-2xl font-bold gradient-text">3.8</div>
-                <div className="text-sm text-muted-foreground mt-1">GPA</div>
+            <div className="flex gap-4 pt-4">
+              <div className="text-center">
+                <div className="text-3xl font-bold gradient-text">3.8</div>
+                <div className="text-sm text-muted-foreground">GPA</div>
               </div>
-              <div className="text-center p-4 glass-card">
-                <div className="text-2xl font-bold gradient-text">2027</div>
-                <div className="text-sm text-muted-foreground mt-1">Expected Grad</div>
-              </div>
-              <div className="text-center p-4 glass-card">
-                <div className="text-lg font-semibold text-secondary mt-1">Research + Teaching Assistant</div>
-              </div>
-              <div className="text-center p-4 glass-card">
-                <div className="text-lg font-semibold text-primary mt-1">NSERC Research Awardee</div>
+              <div className="w-px bg-border" />
+              <div className="text-center">
+                <div className="text-3xl font-bold gradient-text">2027</div>
+                <div className="text-sm text-muted-foreground">Expected Grad</div>
               </div>
             </div>
           </div>
