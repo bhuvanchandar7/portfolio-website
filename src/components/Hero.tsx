@@ -55,6 +55,14 @@ const Hero = () => {
             View My Work
           </Button>
           <Button
+            variant="outline"
+            size="lg"
+            className="border-secondary/30 hover:border-secondary hover:bg-secondary/10"
+            onClick={() => window.open("/Resume.pdf", "_blank")}
+          >
+            View Resume
+          </Button>
+          <Button
             onClick={() => scrollToSection("contact")}
             variant="outline"
             size="lg"
