@@ -42,13 +42,11 @@ const About = () => {
               with a passion for building intelligent systems that solve real-world problems.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Currently working as an <span className="text-secondary font-semibold">Undergraduate Research Assistant</span> in 
-              the Renewable Thermal Energy Lab, where I've achieved R² = 0.98 accuracy in thermal storage prediction using 
-              multi-head attention LSTM architectures.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
               With a <span className="text-primary font-semibold">3.8 GPA</span>, I combine strong academic performance with 
               practical experience in machine learning, data analytics, and full-stack development.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Currently working as an <span className="text-secondary font-semibold">Undergraduate Research Assistant</span> at the University of Alberta’s Renewable Thermal Energy Lab, where I use deep learning and predictive modeling to improve renewable energy systems. I also work as a <span className="text-secondary font-semibold">Undergraduate Teaching Assistant</span> for Applied Statistics, helping students connect data analysis with real-world applications. I’m passionate about building intelligent, data-driven solutions that make technology smarter and more sustainable.
             </p>
             <div className="flex gap-4 pt-4">
               <div className="text-center">
