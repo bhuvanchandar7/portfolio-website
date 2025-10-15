@@ -21,7 +21,7 @@ const About = () => {
     {
       icon: TrendingUp,
       title: "Research",
-      description: "(soon)",
+      description: "Publishing work in thermal energy optimization (soon)",
     },
   ];
 
