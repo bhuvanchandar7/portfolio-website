@@ -48,27 +48,20 @@ const About = () => {
             <p className="text-lg text-muted-foreground leading-relaxed">
               Currently working as a <span className="text-secondary font-semibold">Research and Teaching Assistant</span> at the University of Alberta, applying AI and data analytics to renewable energy systems and statistical learning.
             </p>
-            <div className="flex gap-4 pt-4 flex-wrap">
-              <div className="text-center flex-1 min-w-[100px]">
-                <div className="text-3xl font-bold gradient-text">3.8</div>
-                <div className="text-sm text-muted-foreground">GPA</div>
+            <div className="flex gap-3 pt-4 items-center justify-center">
+              <div className="text-center">
+                <div className="text-2xl md:text-3xl font-bold gradient-text">3.8</div>
+                <div className="text-xs md:text-sm text-muted-foreground whitespace-nowrap">GPA</div>
               </div>
-              <div className="w-px bg-border" />
-              <div className="text-center flex-1 min-w-[100px]">
-                <div className="text-3xl font-bold gradient-text">2027</div>
-                <div className="text-sm text-muted-foreground">Expected Grad</div>
+              <div className="w-px h-12 bg-border" />
+              <div className="text-center">
+                <div className="text-2xl md:text-3xl font-bold gradient-text">2027</div>
+                <div className="text-xs md:text-sm text-muted-foreground whitespace-nowrap">Expected Grad</div>
               </div>
-              <div className="w-px bg-border" />
-              <div className="text-center flex-1 min-w-[120px]">
-                <div className="text-3xl font-bold gradient-text">2×</div>
-                <div className="text-sm text-muted-foreground">Assistant Roles</div>
-                <div className="text-xs text-muted-foreground/80">Research & Teaching</div>
-              </div>
-              <div className="w-px bg-border" />
-              <div className="text-center flex-1 min-w-[120px]">
-                <div className="text-3xl font-bold gradient-text">NSERC</div>
-                <div className="text-sm text-muted-foreground">Awardee</div>
-                <div className="text-xs text-muted-foreground/80">Undergraduate Research</div>
+              <div className="w-px h-12 bg-border" />
+              <div className="text-center">
+                <div className="text-2xl md:text-3xl font-bold gradient-text">NSERC</div>
+                <div className="text-xs md:text-sm text-muted-foreground whitespace-nowrap">Awardee</div>
               </div>
             </div>
           </div>
