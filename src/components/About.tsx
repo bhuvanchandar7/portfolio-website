@@ -48,15 +48,27 @@ const About = () => {
             <p className="text-lg text-muted-foreground leading-relaxed">
               Currently working as a <span className="text-secondary font-semibold">Research and Teaching Assistant</span> at the University of Alberta, applying AI and data analytics to renewable energy systems and statistical learning.
             </p>
-            <div className="flex gap-4 pt-4">
-              <div className="text-center">
+            <div className="flex gap-4 pt-4 flex-wrap">
+              <div className="text-center flex-1 min-w-[100px]">
                 <div className="text-3xl font-bold gradient-text">3.8</div>
                 <div className="text-sm text-muted-foreground">GPA</div>
               </div>
               <div className="w-px bg-border" />
-              <div className="text-center">
+              <div className="text-center flex-1 min-w-[100px]">
                 <div className="text-3xl font-bold gradient-text">2027</div>
                 <div className="text-sm text-muted-foreground">Expected Grad</div>
+              </div>
+              <div className="w-px bg-border" />
+              <div className="text-center flex-1 min-w-[120px]">
+                <div className="text-3xl font-bold gradient-text">2×</div>
+                <div className="text-sm text-muted-foreground">Assistant Roles</div>
+                <div className="text-xs text-muted-foreground/80">Research & Teaching</div>
+              </div>
+              <div className="w-px bg-border" />
+              <div className="text-center flex-1 min-w-[120px]">
+                <div className="text-3xl font-bold gradient-text">NSERC</div>
+                <div className="text-sm text-muted-foreground">Awardee</div>
+                <div className="text-xs text-muted-foreground/80">Undergraduate Research</div>
               </div>
             </div>
           </div>
