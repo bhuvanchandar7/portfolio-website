@@ -70,22 +70,4 @@ Experience the portfolio live: https://www.bhuvanveeravalli.com
 - Building scalable architectures that support business growth
 - Implementing responsive designs that enhance user satisfaction
 
-### Getting Started
-
-To run this project locally:
-
-```sh
-# Clone the repository
-git clone <YOUR_REPOSITORY_URL>
-
-# Navigate to the project directory
-cd creative-profile-box
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
-```
-
 *Built with modern web technologies: React, TypeScript, Tailwind CSS, and Vite*
