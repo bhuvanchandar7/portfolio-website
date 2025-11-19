@@ -38,12 +38,12 @@ const Hero = () => {
         </h1>
 
         <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 font-light text-center">
-          ML Engineer & Computer Science Student
+          Backend Engineer & ML Developer
         </p>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed text-center">
-          Designing intelligent systems through predictive modeling, deep learning, and data-driven innovation. 
-          Transforming complex data into scalable insights at <span className="text-secondary font-semibold">University of Alberta</span>.
+          Building scalable backend systems and intelligent solutions through database design, API development, and machine learning. 
+          Transforming complex data into production-ready applications at <span className="text-secondary font-semibold">University of Alberta</span>.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">

@@ -27,6 +27,16 @@ const Projects = () => {
       github: "https://github.com/cmput301-w25/project-impostersyndrome",
     },
     {
+      title: "Twitter Clone",
+      subtitle: "Backend-Focused Social Media Platform",
+      description:
+        "Built modular backend architecture with relational database design using raw SQL. Implemented authentication, tweet composition, timeline generation, hashtag extraction, and favorite lists with optimized query performance.",
+      tech: ["Python", "SQLite", "SQL", "Database Design", "Backend Architecture"],
+      period: "2024",
+      color: "from-blue-600 to-cyan-600",
+      github: "https://github.com/bhuvanchandar7/Twitter-Clone",
+    },
+    {
       title: "Ray Tracer",
       subtitle: "3D Graphics Rendering Engine",
       description:
