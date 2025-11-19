@@ -32,7 +32,7 @@ const Projects = () => {
       description:
         "Built modular backend architecture with relational database design using raw SQL. Implemented authentication, tweet composition, timeline generation, hashtag extraction, and favorite lists with optimized query performance.",
       tech: ["Python", "SQLite", "SQL", "Database Design", "Backend Architecture"],
-      period: "2024",
+      period: "Apr 2025",
       color: "from-blue-600 to-cyan-600",
       github: "https://github.com/bhuvanchandar7/Twitter-Clone",
     },
@@ -42,7 +42,7 @@ const Projects = () => {
       description:
         "Implemented a high-performance ray tracer in C with support for realistic lighting, shadows, reflections, and refractions. Optimized rendering algorithms for complex scenes with multiple objects and light sources.",
       tech: ["C", "Computer Graphics", "Algorithms"],
-      period: "2024",
+      period: "Feb 2025",
       color: "from-amber-500 to-orange-600",
       github: "https://github.com/bhuvanchandar7/Ray-Tracer",
     },
