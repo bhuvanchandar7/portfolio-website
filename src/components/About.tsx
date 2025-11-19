@@ -4,19 +4,19 @@ import { Brain, Code, Database, TrendingUp } from "lucide-react";
 const About = () => {
   const highlights = [
     {
+      icon: Database,
+      title: "Backend Systems",
+      description: "Database design, APIs, and scalable architecture",
+    },
+    {
       icon: Brain,
       title: "Machine Learning",
       description: "Deep learning, neural networks, and predictive modeling",
     },
     {
-      icon: Database,
-      title: "Data Analytics",
-      description: "Statistical analysis and data-driven decision making",
-    },
-    {
       icon: Code,
       title: "Full-Stack Dev",
-      description: "Building scalable applications with modern frameworks",
+      description: "Building end-to-end applications with modern tech",
     },
     {
       icon: TrendingUp,
@@ -39,14 +39,14 @@ const About = () => {
           <div className="space-y-6 animate-slide-up">
             <p className="text-lg text-muted-foreground leading-relaxed">
               I'm a <span className="text-foreground font-semibold">Computer Science student</span> at the University of Alberta 
-              with a passion for building intelligent systems that solve real-world problems.
+              specializing in backend development, database architecture, and machine learning systems.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              With a <span className="text-primary font-semibold">3.8 GPA</span>, I combine strong academic performance with 
-              practical experience in machine learning, data analytics, and full-stack development.
+              With a <span className="text-primary font-semibold">3.8 GPA</span>, I design scalable backend solutions with expertise in 
+              SQL databases, RESTful APIs, and production-ready machine learning deployments.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Currently working as a <span className="text-secondary font-semibold">Research and Teaching Assistant</span> at the University of Alberta, applying AI and data analytics to renewable energy systems and statistical learning.
+              Currently working as a <span className="text-secondary font-semibold">Research and Teaching Assistant</span> at the University of Alberta, building data pipelines and ML systems for renewable energy optimization.
             </p>
             <div className="flex gap-6 pt-4 items-center justify-evenly w-full max-w-2xl mx-auto">
               <div className="text-center flex-1">
