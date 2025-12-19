@@ -6,6 +6,16 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
+      title: "SocialDistribution",
+      subtitle: "Distributed Social Networking Platform",
+      description:
+        "Architected a federated social networking platform enabling cross-node communication via RESTful APIs. Implemented inbox-based activity distribution, real-time content aggregation across 5+ federated nodes, and GitHub integration for content import. Built with scalable microservices architecture supporting authentication, follows, comments, and likes across distributed systems.",
+      tech: ["Django", "REST API", "PostgreSQL", "Federation", "ActivityPub-inspired", "Docker"],
+      period: "Sep 2025 – Dec 2025",
+      color: "from-emerald-500 to-teal-600",
+      github: "https://github.com/bhuvanchandar7/SocialDistribution",
+    },
+    {
       title: "FlightPredict",
       subtitle: "Flight Delay Prediction System",
       description:
