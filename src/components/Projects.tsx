@@ -11,7 +11,7 @@ const Projects = () => {
       description:
         "Achieved >85% accuracy in flight delay predictions using PyTorch MLP trained on integrated BTS and weather datasets. Deployed dual-service architecture with sub-500ms latency.",
       tech: ["Python", "PyTorch", "FastAPI", "Spring Boot", "Docker", "AWS"],
-      period: "2025 – Present",
+      period: "Jun 2025 – Present",
       color: "from-primary to-purple-600",
       github: "https://github.com/Roshan1299/Flight-Delay-Predictor",
     },
