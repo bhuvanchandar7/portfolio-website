@@ -4,63 +4,49 @@ import { Badge } from "@/components/ui/badge";
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Backend Development",
-      skills: [
-        "RESTful APIs",
-        "Database Design",
-        "SQL & NoSQL",
-        "System Architecture",
-        "Authentication & Security",
-        "Server-Side Logic",
-      ],
-      gradient: "from-blue-600 to-cyan-600",
+      title: "Programming Languages",
+      skills: ["Java", "JavaScript", "Python", "C++", "C", "C#"],
+      gradient: "from-violet-500 to-fuchsia-500",
     },
     {
-      title: "Machine Learning & AI",
-      skills: [
-        "Predictive Modeling",
-        "Deep Learning",
-        "PyTorch",
-        "Model Deployment",
-        "Computer Vision",
-        "Time-Series Forecasting",
-      ],
-      gradient: "from-primary to-purple-600",
+      title: "Frontend Technologies",
+      skills: ["ReactJS", "HTML", "CSS", "Tailwind CSS", "Flask"],
+      gradient: "from-cyan-500 to-blue-500",
     },
     {
-      title: "Tech Stack",
-      skills: [
-        "Python",
-        "Java",
-        "FastAPI",
-        "Spring Boot",
-        "Docker",
-        "AWS",
-        "Firebase",
-        "Git",
-      ],
-      gradient: "from-secondary to-blue-600",
+      title: "Backend & APIs",
+      skills: ["Spring Boot", "FastAPI", "Node.js", "Express.js", "Django", "REST APIs", "GraphQL", "Microservices", ".NET", "J2EE"],
+      gradient: "from-emerald-500 to-teal-500",
     },
     {
-      title: "Data & Analytics",
-      skills: [
-        "Data Pipelines",
-        "Statistical Analysis",
-        "Feature Engineering",
-        "Model Evaluation",
-        "Performance Optimization",
-      ],
-      gradient: "from-purple-600 to-pink-600",
+      title: "Databases",
+      skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "DynamoDB", "Vector Databases"],
+      gradient: "from-amber-500 to-orange-500",
     },
     {
-      title: "Soft Skills",
-      skills: [
-        "Analytical Thinking",
-        "Collaboration",
-        "Technical Communication",
-        "Agile (Scrum)",
-      ],
-      gradient: "from-cyan-500 to-secondary",
+      title: "Cloud & DevOps",
+      skills: ["AWS (Lambda, S3, RDS, Cognito, Bedrock)", "Docker", "Kubernetes", "Jenkins", "CI/CD", "GCP", "Git", "GitHub", "Unix/Linux"],
+      gradient: "from-sky-500 to-indigo-500",
+    },
+    {
+      title: "AI/ML & GenAI",
+      skills: ["PyTorch", "TensorFlow", "LLMs", "RAG", "LangChain", "NLP", "Embeddings", "Model Fine-tuning", "Prompt Engineering", "Claude", "Copilot", "Google Mediapipe"],
+      gradient: "from-purple-500 to-pink-500",
+    },
+    {
+      title: "Big Data Technologies",
+      skills: ["Hadoop (MapReduce)", "Spark", "Kafka", "Data Pipelines"],
+      gradient: "from-rose-500 to-red-500",
+    },
+    {
+      title: "Security & Authentication",
+      skills: ["OAuth", "JWT", "AWS Cognito", "Secure API Design"],
+      gradient: "from-lime-500 to-green-500",
+    },
+    {
+      title: "Software Engineering",
+      skills: ["Agile Methodology", "SDLC", "Version Control", "JIRA", "Data Structures", "Algorithms", "A/B Testing", "Performance Tuning", "Site Reliability Engineering"],
+      gradient: "from-blue-500 to-cyan-500",
     },
   ];
 
