@@ -53,7 +53,7 @@ As a developer, I bring:
 
 ### Live Demo
 
-Experience the portfolio live: [https://lovable.dev/projects/68195116-be8b-47dc-8190-744f4f77a53b](https://lovable.dev/projects/68195116-be8b-47dc-8190-744f4f77a53b)
+Experience the portfolio live: https://www.bhuvanveeravalli.com
 
 ### For Potential Employers
 
@@ -69,38 +69,5 @@ Experience the portfolio live: [https://lovable.dev/projects/68195116-be8b-47dc-
 - Creating accessible applications that reach wider audiences
 - Building scalable architectures that support business growth
 - Implementing responsive designs that enhance user satisfaction
-
-### Getting Started
-
-To run this project locally:
-
-```sh
-# Clone the repository
-git clone <YOUR_REPOSITORY_URL>
-
-# Navigate to the project directory
-cd creative-profile-box
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
-```
-
-### Contact & Hire Me
-
-Looking for a skilled developer to bring your project to life? I'm available for:
-
-- Frontend development projects
-- Full-stack applications
-- Performance optimization and code reviews
-- UI/UX implementation from design to production
-
-**Connect with me:**
-- **GitHub**: [Your GitHub Profile]
-- **Email**: [Your Professional Email]
-
----
 
 *Built with modern web technologies: React, TypeScript, Tailwind CSS, and Vite*

@@ -6,12 +6,22 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
+      title: "SocialDistribution",
+      subtitle: "Distributed Social Networking Platform",
+      description:
+        "Architected a federated social networking platform enabling cross-node communication via RESTful APIs. Implemented inbox-based activity distribution, real-time content aggregation across 5+ federated nodes, and GitHub integration for content import. Built with scalable microservices architecture supporting authentication, follows, comments, and likes across distributed systems.",
+      tech: ["Django", "REST API", "PostgreSQL", "Federation", "ActivityPub-inspired", "Docker"],
+      period: "Sep 2025 – Dec 2025",
+      color: "from-emerald-500 to-teal-600",
+      github: "https://github.com/bhuvanchandar7/SocialDistribution",
+    },
+    {
       title: "FlightPredict",
       subtitle: "Flight Delay Prediction System",
       description:
         "Achieved >85% accuracy in flight delay predictions using PyTorch MLP trained on integrated BTS and weather datasets. Deployed dual-service architecture with sub-500ms latency.",
       tech: ["Python", "PyTorch", "FastAPI", "Spring Boot", "Docker", "AWS"],
-      period: "2025 – Present",
+      period: "Jun 2025 – Present",
       color: "from-primary to-purple-600",
       github: "https://github.com/Roshan1299/Flight-Delay-Predictor",
     },
@@ -27,12 +37,22 @@ const Projects = () => {
       github: "https://github.com/cmput301-w25/project-impostersyndrome",
     },
     {
+      title: "Twitter Clone",
+      subtitle: "Backend-Focused Social Media Platform",
+      description:
+        "Built modular backend architecture with relational database design using raw SQL. Implemented authentication, tweet composition, timeline generation, hashtag extraction, and favorite lists with optimized query performance.",
+      tech: ["Python", "SQLite", "SQL", "Database Design", "Backend Architecture"],
+      period: "Apr 2025",
+      color: "from-blue-600 to-cyan-600",
+      github: "https://github.com/bhuvanchandar7/Twitter-Clone",
+    },
+    {
       title: "Ray Tracer",
       subtitle: "3D Graphics Rendering Engine",
       description:
         "Implemented a high-performance ray tracer in C with support for realistic lighting, shadows, reflections, and refractions. Optimized rendering algorithms for complex scenes with multiple objects and light sources.",
       tech: ["C", "Computer Graphics", "Algorithms"],
-      period: "2024",
+      period: "Feb 2025",
       color: "from-amber-500 to-orange-600",
       github: "https://github.com/bhuvanchandar7/Ray-Tracer",
     },

@@ -4,39 +4,51 @@ import { Badge } from "@/components/ui/badge";
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Core Areas",
+      title: "Backend Development",
+      skills: [
+        "RESTful APIs",
+        "Database Design",
+        "SQL & NoSQL",
+        "System Architecture",
+        "Authentication & Security",
+        "Server-Side Logic",
+      ],
+      gradient: "from-blue-600 to-cyan-600",
+    },
+    {
+      title: "Machine Learning & AI",
       skills: [
         "Predictive Modeling",
         "Deep Learning",
-        "Time-Series Forecasting",
-        "Data Analytics",
+        "PyTorch",
+        "Model Deployment",
         "Computer Vision",
-        "Optimization",
+        "Time-Series Forecasting",
       ],
       gradient: "from-primary to-purple-600",
     },
     {
-      title: "Frameworks & Tools",
+      title: "Tech Stack",
       skills: [
-        "PyTorch",
-        "scikit-learn",
-        "OpenCV",
+        "Python",
+        "Java",
         "FastAPI",
         "Spring Boot",
-        "Firebase",
         "Docker",
+        "AWS",
+        "Firebase",
         "Git",
       ],
       gradient: "from-secondary to-blue-600",
     },
     {
-      title: "Technical Concepts",
+      title: "Data & Analytics",
       skills: [
-        "Model Evaluation",
-        "Residual Analysis",
-        "Multi-Target Learning",
-        "Statistical Inference",
+        "Data Pipelines",
+        "Statistical Analysis",
         "Feature Engineering",
+        "Model Evaluation",
+        "Performance Optimization",
       ],
       gradient: "from-purple-600 to-pink-600",
     },
@@ -94,7 +106,7 @@ const Skills = () => {
             <p className="text-muted-foreground">Certifications</p>
           </Card>
           <Card className="glass-card p-6 text-center border-primary/20 hover:border-primary/40 transition-all">
-            <h4 className="text-3xl font-bold gradient-text mb-2">4+</h4>
+            <h4 className="text-3xl font-bold gradient-text mb-2">5+</h4>
             <p className="text-muted-foreground">Major Projects</p>
           </Card>
           <Card className="glass-card p-6 text-center border-primary/20 hover:border-primary/40 transition-all">
