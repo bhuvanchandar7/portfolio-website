@@ -6,13 +6,21 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
+      title: "IntelliDocs",
+      subtitle: "AI-Powered Document Intelligence Platform",
+      description:
+        "Engineered a production-ready RAG system achieving <3s query latency and >85% answer relevance. Built hybrid retrieval combining vector similarity search with BM25 keyword matching, fine-tuned Mistral-7B with LoRA for domain-specific responses, and implemented automatic citation generation. Designed scalable architecture handling 100+ concurrent users with comprehensive monitoring via Prometheus and Grafana.",
+      tech: ["Python", "FastAPI", "React", "FAISS", "Mistral-7B", "Docker", "Kubernetes"],
+      color: "from-violet-500 to-fuchsia-500",
+      github: "https://github.com/bhuvanchandar7/IntelliDocs",
+    },
+    {
       title: "SocialDistribution",
       subtitle: "Distributed Social Networking Platform",
       description:
         "Architected a federated social networking platform enabling cross-node communication via RESTful APIs. Implemented inbox-based activity distribution, real-time content aggregation across 5+ federated nodes, and GitHub integration for content import. Built with scalable microservices architecture supporting authentication, follows, comments, and likes across distributed systems.",
       tech: ["Django", "REST API", "PostgreSQL", "Federation", "ActivityPub-inspired", "Docker"],
-      period: "Sep 2025 – Dec 2025",
-      color: "from-emerald-500 to-teal-600",
+      color: "from-emerald-500 to-teal-500",
       github: "https://github.com/bhuvanchandar7/SocialDistribution",
     },
     {
@@ -21,19 +29,16 @@ const Projects = () => {
       description:
         "Achieved >85% accuracy in flight delay predictions using PyTorch MLP trained on integrated BTS and weather datasets. Deployed dual-service architecture with sub-500ms latency.",
       tech: ["Python", "PyTorch", "FastAPI", "Spring Boot", "Docker", "AWS"],
-      period: "Jun 2025 – Present",
-      color: "from-primary to-purple-600",
+      color: "from-sky-500 to-indigo-500",
       github: "https://github.com/Roshan1299/Flight-Delay-Predictor",
     },
-
     {
       title: "Android Mood Tracker",
       subtitle: "Mobile Application",
       description:
         "Built offline-first Android app for mood tracking with geolocation and media integration. Implemented Firebase authentication and real-time synchronization for multi-device access.",
       tech: ["Android SDK", "Firebase", "Java"],
-      period: "Jan – Apr 2025",
-      color: "from-purple-600 to-pink-600",
+      color: "from-rose-500 to-orange-500",
       github: "https://github.com/cmput301-w25/project-impostersyndrome",
     },
     {
@@ -42,8 +47,7 @@ const Projects = () => {
       description:
         "Built modular backend architecture with relational database design using raw SQL. Implemented authentication, tweet composition, timeline generation, hashtag extraction, and favorite lists with optimized query performance.",
       tech: ["Python", "SQLite", "SQL", "Database Design", "Backend Architecture"],
-      period: "Apr 2025",
-      color: "from-blue-600 to-cyan-600",
+      color: "from-cyan-500 to-blue-500",
       github: "https://github.com/bhuvanchandar7/Twitter-Clone",
     },
     {
@@ -52,8 +56,7 @@ const Projects = () => {
       description:
         "Implemented a high-performance ray tracer in C with support for realistic lighting, shadows, reflections, and refractions. Optimized rendering algorithms for complex scenes with multiple objects and light sources.",
       tech: ["C", "Computer Graphics", "Algorithms"],
-      period: "Feb 2025",
-      color: "from-amber-500 to-orange-600",
+      color: "from-amber-500 to-yellow-500",
       github: "https://github.com/bhuvanchandar7/Ray-Tracer",
     },
     {
@@ -62,8 +65,7 @@ const Projects = () => {
       description:
         "Improved fraud detection precision by 15% through feature selection and hyperparameter tuning. Optimized binary classifiers for high-volume financial datasets.",
       tech: ["Python", "scikit-learn", "NumPy"],
-      period: "Nov 2024 – Jan 2025",
-      color: "from-cyan-500 to-secondary",
+      color: "from-lime-500 to-green-500",
       github: "https://github.com/bhuvanchandar7/Credit-card-fraud-detection",
     },
     {
@@ -72,8 +74,7 @@ const Projects = () => {
       description:
         "Designed real-time lane detection using edge detection and contour mapping. Enhanced processing efficiency by 30% through optimized filtering pipelines.",
       tech: ["Python", "OpenCV", "Computer Vision"],
-      period: "Sep – Dec 2024",
-      color: "from-pink-600 to-red-600",
+      color: "from-pink-500 to-red-500",
       github: "https://github.com/bhuvanchandar7/lane-line-detection",
     },
   ];
@@ -100,10 +101,7 @@ const Projects = () => {
             >
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
-                  <div className={`inline-block px-3 py-1 rounded-full text-xs font-mono mb-3 bg-gradient-to-r ${project.color} text-white`}>
-                    {project.period}
-                  </div>
-                  <h3 className="text-2xl font-bold mb-1 group-hover:text-primary transition-colors">
+                  <h3 className={`text-2xl font-bold mb-1 bg-gradient-to-r ${project.color} bg-clip-text text-transparent`}>
                     {project.title}
                   </h3>
                   <p className="text-sm text-muted-foreground mb-3">{project.subtitle}</p>
