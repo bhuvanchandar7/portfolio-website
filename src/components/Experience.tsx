@@ -4,7 +4,7 @@ import { Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      role: "Undergraduate Research Intern (Future Energy Systems)",
+      role: "FES Summer Intern",
       organization: "Renewable Thermal Energy Lab — URI Stipend Awardee",
       location: "University of Alberta, Edmonton, AB",
       period: "May 2026 – Aug 2026",
