@@ -13,6 +13,7 @@ const Projects = () => {
       tech: ["Next.js 16", "GPT-4o", "GPT-4o-mini", "Prisma", "Turso (libSQL)", "Prompt Engineering", "LLM Orchestration"],
       color: "from-fuchsia-500 to-purple-500",
       github: "",
+      website: "https://la-irner.vercel.app",
     },
     {
       title: "IntelliDocs",
@@ -130,6 +131,19 @@ const Projects = () => {
               </div>
 
               <div className="flex gap-3 pt-2">
+                {project.website && (
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="border-primary/30 hover:border-primary hover:bg-primary/10"
+                    asChild
+                  >
+                    <a href={project.website} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Live Demo
+                    </a>
+                  </Button>
+                )}
                 {project.github && (
                   <Button
                     variant="outline"
