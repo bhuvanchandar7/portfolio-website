@@ -6,6 +6,15 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
+      title: "LAIrner",
+      subtitle: "Socratic AI Tutoring Platform | Lead AI Systems Engineer",
+      description:
+        "Designed a dual-model LLM orchestration pipeline using GPT-4o for Socratic reasoning and a zero-shot GPT-4o-mini classifier for real-time subject categorization across 14 domains with sub-200ms latency. Engineered prompt guardrails with negative constraints to prevent answer leakage; adaptive feedback loop adjusts hint density per attempt count — an early-stage RLHF-inspired alignment mechanism. Built stateful backend with Next.js 16, Prisma, and Turso (libSQL) to atomically ingest interaction metrics, chat histories, and proficiency scores in a single database transaction.",
+      tech: ["Next.js 16", "GPT-4o", "GPT-4o-mini", "Prisma", "Turso (libSQL)", "Prompt Engineering", "LLM Orchestration"],
+      color: "from-fuchsia-500 to-purple-500",
+      github: "",
+    },
+    {
       title: "IntelliDocs",
       subtitle: "AI-Powered Document Intelligence Platform",
       description:

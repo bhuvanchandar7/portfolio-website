@@ -4,6 +4,17 @@ import { Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
+      role: "Undergraduate Research Intern (Future Energy Systems)",
+      organization: "Renewable Thermal Energy Lab — URI Stipend Awardee",
+      location: "University of Alberta, Edmonton, AB",
+      period: "May 2026 – Aug 2026",
+      achievements: [
+        "Awarded URI Stipend funded by Future Energy Systems for the project ‘Predicting Three-Dimensional Thermal Dynamics in Molten Salt Energy Storage Using Infrared Imaging and Spatiotemporal Deep Learning’",
+        "Developing spatiotemporal deep learning models on infrared imaging data to forecast 3D thermal dynamics in molten salt storage systems",
+        "Building end-to-end data pipelines for IR sensor ingestion, preprocessing, and model evaluation under Dr. Taha Manzoor",
+      ],
+    },
+    {
       role: "Undergraduate Research Assistant",
       organization: "Renewable Thermal Energy Lab",
       location: "University of Alberta, Edmonton, AB",
@@ -28,6 +39,11 @@ const Experience = () => {
   ];
 
   const certifications = [
+    {
+      title: "URI Stipend Award (Future Energy Systems)",
+      issuer: "University of Alberta — Undergraduate Research Initiative",
+      date: "Mar 2026",
+    },
     {
       title: "Generative AI for Software Development",
       issuer: "DeepLearning.AI",
