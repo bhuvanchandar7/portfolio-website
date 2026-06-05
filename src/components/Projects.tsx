@@ -13,6 +13,7 @@ const Projects = () => {
       tech: ["Next.js 16", "GPT-4o", "GPT-4o-mini", "Prisma", "Turso (libSQL)", "Prompt Engineering", "LLM Orchestration"],
       color: "from-fuchsia-500 to-purple-500",
       github: "",
+      website: "https://la-irner.vercel.app",
     },
     {
       title: "IntelliDocs",
