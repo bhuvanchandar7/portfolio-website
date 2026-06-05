@@ -9,7 +9,7 @@ const Projects = () => {
       title: "LAIrner",
       subtitle: "Socratic AI Tutoring Platform | Lead AI Systems Engineer",
       description:
-        "Designed a dual-model LLM orchestration pipeline using GPT-4o for Socratic reasoning and a zero-shot GPT-4o-mini classifier for real-time subject categorization across 14 domains with sub-200ms latency. Engineered prompt guardrails with negative constraints to prevent answer leakage; adaptive feedback loop adjusts hint density per attempt count — an early-stage RLHF-inspired alignment mechanism. Built stateful backend with Next.js 16, Prisma, and Turso (libSQL) to atomically ingest interaction metrics, chat histories, and proficiency scores in a single database transaction.",
+        "Designed a dual-model LLM orchestration pipeline pairing GPT-4o for Socratic reasoning with a zero-shot GPT-4o-mini classifier across 14 domains at sub-200ms latency. Engineered prompt guardrails and an adaptive hint-density feedback loop — an early-stage RLHF-inspired alignment mechanism. Built a stateful Next.js 16 + Prisma + Turso backend that atomically ingests interactions, chat history, and proficiency scores in a single transaction.",
       tech: ["Next.js 16", "GPT-4o", "GPT-4o-mini", "Prisma", "Turso (libSQL)", "Prompt Engineering", "LLM Orchestration"],
       color: "from-fuchsia-500 to-purple-500",
       github: "",
@@ -106,7 +106,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="glass-card p-6 hover:glow-effect transition-all duration-300 group animate-slide-up"
+              className="glass-card p-6 hover:glow-effect transition-all duration-300 group animate-slide-up flex flex-col h-full"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start justify-between mb-4">
@@ -118,7 +118,7 @@ const Projects = () => {
                 </div>
               </div>
 
-              <p className="text-muted-foreground mb-4 leading-relaxed">
+              <p className="text-muted-foreground mb-4 leading-relaxed flex-1">
                 {project.description}
               </p>
 
@@ -130,7 +130,7 @@ const Projects = () => {
                 ))}
               </div>
 
-              <div className="flex gap-3 pt-2">
+              <div className="flex gap-3 pt-2 mt-auto">
                 {project.website && (
                   <Button
                     variant="outline"
