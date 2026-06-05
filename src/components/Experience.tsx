@@ -117,16 +117,16 @@ const Experience = () => {
           <h3 className="text-2xl font-bold mb-6 text-center">
             <span className="gradient-text">Certifications</span>
           </h3>
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {certifications.map((cert, index) => (
               <Card
                 key={index}
-                className="glass-card p-6 hover:border-primary/50 transition-all duration-300 animate-slide-up"
+                className="glass-card p-6 hover:border-primary/50 transition-all duration-300 animate-slide-up flex flex-col h-full"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <h4 className="font-semibold mb-2 text-foreground">{cert.title}</h4>
-                <p className="text-sm text-muted-foreground mb-1">{cert.issuer}</p>
-                <p className="text-xs text-secondary font-mono">
+                <p className="text-sm text-muted-foreground mb-1 flex-1">{cert.issuer}</p>
+                <p className="text-xs text-secondary font-mono mt-auto">
                   {cert.date}
                   {cert.expires && ` • Expires ${cert.expires}`}
                 </p>
