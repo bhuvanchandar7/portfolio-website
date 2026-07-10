@@ -2,115 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Design system — "The System Console"
+   Utilitarian/high-tech: carbon-black ground, exposed 1px grid
+   mechanics, monochrome type, one amber phosphor accent,
+   zero border-radius.
+   Display: Space Grotesk · Utility: JetBrains Mono
 */
 
 @layer base {
   :root {
-    --background: 222 47% 11%;
-    --foreground: 210 40% 98%;
+    --background: 60 4% 4%;
+    --foreground: 50 21% 89%;
 
-    --card: 222 47% 15%;
-    --card-foreground: 210 40% 98%;
+    --card: 60 3% 7%;
+    --card-foreground: 50 21% 89%;
 
-    --popover: 222 47% 15%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 60 3% 7%;
+    --popover-foreground: 50 21% 89%;
 
-    --primary: 263 70% 60%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 50 21% 89%;
+    --primary-foreground: 60 4% 4%;
 
-    --secondary: 193 80% 55%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 41 100% 50%;
+    --secondary-foreground: 60 4% 4%;
 
-    --muted: 217 33% 20%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 60 4% 12%;
+    --muted-foreground: 50 6% 53%;
 
-    --accent: 263 70% 60%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 41 100% 50%;
+    --accent-foreground: 60 4% 4%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 50 21% 89%;
 
-    --border: 217 33% 25%;
-    --input: 217 33% 25%;
-    --ring: 263 70% 60%;
+    --border: 56 8% 15%;
+    --input: 56 8% 15%;
+    --ring: 41 100% 50%;
 
-    --radius: 0.75rem;
-
-    /* Gradient colors */
-    --gradient-from: 263 70% 60%;
-    --gradient-via: 240 70% 60%;
-    --gradient-to: 193 80% 55%;
-
-    /* Glass effect */
-    --glass-bg: 222 47% 15% / 0.6;
-    --glass-border: 210 40% 98% / 0.1;
-  }
-}
-
-@layer utilities {
-  .gradient-text {
-    @apply bg-gradient-to-r from-primary via-[hsl(240,70%,60%)] to-secondary bg-clip-text text-transparent;
+    --radius: 0rem;
   }
 
-  .gradient-bg {
-    @apply bg-gradient-to-br from-primary via-[hsl(240,70%,60%)] to-secondary;
-  }
-
-  .glass-card {
-    @apply bg-card/60 backdrop-blur-lg border border-white/10 shadow-xl;
-  }
-
-  .glow-effect {
-    box-shadow: 0 0 40px hsl(var(--primary) / 0.3);
-  }
-
-  .text-glow {
-    text-shadow: 0 0 30px hsl(var(--primary) / 0.5);
-  }
-
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-  }
-
-  .animate-slide-up {
-    animation: slideUp 0.5s ease-out;
-  }
-
-  @keyframes slideUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .animate-gradient {
-    background-size: 200% 200%;
-    animation: gradientShift 8s ease infinite;
-  }
-
-  @keyframes gradientShift {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-  }
-}
-
-@layer base {
   * {
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-coal text-bone font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-signal text-coal;
+  }
+}
+
+@layer utilities {
+  /* CRT scanline overlay for imagery */
+  .scanlines {
+    background-image: repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.28) 0px,
+      rgba(0, 0, 0, 0.28) 1px,
+      transparent 1px,
+      transparent 3px
+    );
   }
 }

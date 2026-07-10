@@ -1,5 +1,4 @@
-import { Card } from "@/components/ui/card";
-import { Calendar, MapPin } from "lucide-react";
+import SectionHeading from "@/components/SectionHeading";
 
 const Experience = () => {
   const experiences = [
@@ -63,85 +62,71 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 px-4 bg-card/30">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">Experience</span> & Certifications
-          </h2>
-          <div className="w-20 h-1 gradient-bg mx-auto rounded-full" />
-        </div>
+    <section id="experience" className="border-b border-line px-5 py-24 md:px-10">
+      <SectionHeading index="03" title="Experience" note="training_history.log" />
 
-        <div className="space-y-8 mb-16">
-          {experiences.map((exp, index) => (
-            <Card
+      <div className="divide-y divide-line border border-line">
+        {experiences.map((exp, index) => (
+          <article key={index} className="p-6 transition-colors hover:bg-panel md:p-8">
+            <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 font-mono text-[11px] uppercase tracking-[0.15em]">
+              <span className="text-signal">
+                EXP.{String(index + 1).padStart(2, "0")} — {exp.period}
+              </span>
+              <span className="text-dim">{exp.location}</span>
+            </div>
+            <h3 className="mt-4 font-sans text-2xl font-bold uppercase tracking-tight md:text-3xl">
+              {exp.role}
+            </h3>
+            <p className="mt-1 font-mono text-xs text-dim">{exp.organization}</p>
+            <ul className="mt-5 space-y-2.5">
+              {exp.achievements.map((achievement, achIndex) => (
+                <li
+                  key={achIndex}
+                  className="flex gap-3 font-mono text-[13px] leading-relaxed text-bone/75"
+                >
+                  <span className="shrink-0 text-signal">&gt;</span>
+                  <span>{achievement}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
+
+      <div className="mt-12">
+        <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.2em] text-dim">
+          <span className="text-signal">//</span> certifications & awards
+        </p>
+        <div className="grid grid-cols-1 border-l border-t border-line sm:grid-cols-2 lg:grid-cols-4">
+          {certifications.map((cert, index) => (
+            <div
               key={index}
-              className="glass-card p-6 hover:glow-effect transition-all duration-300 animate-slide-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="flex min-h-[10rem] flex-col border-b border-r border-line p-5 transition-colors hover:bg-panel"
             >
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                <div>
-                  <h3 className="text-2xl font-bold mb-1 gradient-text">{exp.role}</h3>
-                  <p className="text-lg font-semibold text-foreground mb-2">
-                    {exp.organization}
-                  </p>
-                  <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
-                    <span className="flex items-center gap-1">
-                      <MapPin className="w-4 h-4" />
-                      {exp.location}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <Calendar className="w-4 h-4" />
-                      {exp.period}
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <ul className="space-y-2">
-                {exp.achievements.map((achievement, achIndex) => (
-                  <li
-                    key={achIndex}
-                    className="flex items-start gap-3 text-muted-foreground"
-                  >
-                    <span className="text-primary mt-1.5">▸</span>
-                    <span>{achievement}</span>
-                  </li>
-                ))}
-              </ul>
-            </Card>
+              <span className="font-mono text-[10px] tracking-[0.2em] text-signal">
+                CRT.{String(index + 1).padStart(2, "0")}
+              </span>
+              <h4 className="mt-3 flex-1 font-sans text-base font-bold leading-snug">
+                {cert.title}
+              </h4>
+              <p className="mt-3 font-mono text-[11px] text-dim">{cert.issuer}</p>
+              <p className="mt-1.5 font-mono text-[10px] uppercase tracking-widest text-dim">
+                {cert.date}
+                {cert.expires && ` — exp. ${cert.expires}`}
+              </p>
+            </div>
           ))}
         </div>
-
-        <div>
-          <h3 className="text-2xl font-bold mb-6 text-center">
-            <span className="gradient-text">Certifications</span>
-          </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {certifications.map((cert, index) => (
-              <Card
-                key={index}
-                className="glass-card p-6 hover:border-primary/50 transition-all duration-300 animate-slide-up flex flex-col h-full"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <h4 className="font-semibold mb-2 text-foreground">{cert.title}</h4>
-                <p className="text-sm text-muted-foreground mb-1 flex-1">{cert.issuer}</p>
-                <p className="text-xs text-secondary font-mono mt-auto">
-                  {cert.date}
-                  {cert.expires && ` • Expires ${cert.expires}`}
-                </p>
-              </Card>
-            ))}
-          </div>
-        </div>
-
-        <Card className="glass-card p-8 mt-12 text-center gradient-bg">
-          <h3 className="text-2xl font-bold text-white mb-2">🏆 NSERC Award Winner</h3>
-          <p className="text-white/90">
-            Undergraduate Student Research Award • April 2025
-          </p>
-        </Card>
       </div>
+
+      <aside className="mt-8 flex flex-col justify-between gap-2 border border-signal bg-signal px-6 py-6 text-coal md:flex-row md:items-center md:px-10">
+        <h3 className="font-sans text-xl font-bold uppercase tracking-[0.08em] md:text-2xl">
+          ★ NSERC Award Winner
+        </h3>
+        <p className="font-mono text-[11px] uppercase tracking-[0.2em]">
+          Undergraduate Student Research Award — April 2025
+        </p>
+      </aside>
     </section>
   );
 };
