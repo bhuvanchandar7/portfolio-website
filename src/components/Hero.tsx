@@ -58,7 +58,7 @@ const Hero = () => {
             variant="outline"
             size="lg"
             className="border-secondary/30 hover:border-secondary hover:bg-secondary/10"
-            onClick={() => window.open("/Resume.pdf", "_blank")}
+            onClick={() => window.open("/Bhuvan_Veeravalli_Resume.pdf", "_blank")}
           >
             View Resume
           </Button>

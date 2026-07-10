@@ -118,7 +118,7 @@ const Contact = () => {
       </div>
 
       <footer className="text-center mt-16 text-muted-foreground">
-        <p>© 2025 Bhuvan Veeravalli. Built with React & Tailwind CSS.</p>
+        <p>© {new Date().getFullYear()} Bhuvan Veeravalli. Built with React & Tailwind CSS.</p>
       </footer>
     </section>
   );
