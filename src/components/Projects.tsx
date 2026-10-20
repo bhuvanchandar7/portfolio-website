@@ -79,7 +79,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="border-b border-line px-5 py-24 md:px-10">
-      <SectionHeading index="04" title="Projects" note="ls ./outputs --sort=impact" />
+      <SectionHeading index="05" title="Projects" note="ls ./outputs --sort=impact" />
 
       <div className="grid grid-cols-1 border-l border-t border-line md:grid-cols-2">
         {projects.map((project, index) => (

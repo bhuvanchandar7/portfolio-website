@@ -26,7 +26,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="px-5 pt-24 md:px-10">
-      <SectionHeading index="05" title="Contact" note="model.predict(collab)" />
+      <SectionHeading index="06" title="Contact" note="model.predict(collab)" />
 
       <div className="grid grid-cols-12 gap-x-8 gap-y-12 pb-24">
         <div className="col-span-12 lg:col-span-7">
